@@ -5,6 +5,9 @@ const menuBars = document.querySelector(".fa-bars");
 const dropdown = document.querySelector(".dropdown");
 const dropdownMenu = document.querySelector(".dropdown-menu");
 
+const searchBox = document.querySelector(".search");
+const searchBar = document.querySelector(".search-bar");
+
 const footerDate = document.querySelector(".date");
 
 humburger.addEventListener("click", (e) => {
@@ -14,6 +17,10 @@ humburger.addEventListener("click", (e) => {
 
 dropdown.addEventListener("click", () => {
   dropdownMenu.classList.toggle("dropdown-menu-open");
+});
+
+searchBox.addEventListener("click", () => {
+  searchBar.classList.toggle("search-bar-open");
 });
 
 const currentYear = new Date().getFullYear();
